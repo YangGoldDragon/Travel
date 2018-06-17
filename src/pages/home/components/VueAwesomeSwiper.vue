@@ -30,7 +30,11 @@
             imgUrl: '//img1.qunarzz.com/qs/1805/79/895429b453f08002.jpg'
           },
           {
+<<<<<<< HEAD
             id: '001',
+=======
+            id: '003',
+>>>>>>> swiper
             imgUrl: '//img1.qunarzz.com/qs/1806/98/57120f8844f23e02.jpg'
           }
         ]
