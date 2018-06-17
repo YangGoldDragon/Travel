@@ -1,6 +1,8 @@
 # Travel
 
-> A Vue.js project
+## 项目介绍：移动端旅游APP，个人前端作品，非商用产品
+
+## 项目技术栈：vue + vue-router + vuex + vue-cli + es6 + stylus
 
 ## Build Setup
 
