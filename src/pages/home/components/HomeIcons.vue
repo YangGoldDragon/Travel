@@ -17,7 +17,7 @@
   import { Swipe, SwipeItem } from 'mint-ui';
 
   export default {
-    name: 'Icons',
+    name: 'HomeIcons',
     data(){
       return {
         auto: false,

@@ -13,7 +13,7 @@
 
 <script>
   export default {
-    name: 'VueAwesomeSwiper',
+    name: 'HomeVueAwesomeSwiper',
     data() {
       return {
         swiperOption: {
