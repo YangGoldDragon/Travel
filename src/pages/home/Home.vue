@@ -1,9 +1,9 @@
 <template>
   <div>
     <home-header></home-header>
-    <vue-awesome-swiper></vue-awesome-swiper>
-    <icons></icons>
-    <recommend></recommend>
+    <home-vue-awesome-swiper></home-vue-awesome-swiper>
+    <home-icons></home-icons>
+    <home-recommend></home-recommend>
   </div>
 </template>
 
