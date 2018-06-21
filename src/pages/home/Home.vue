@@ -3,20 +3,23 @@
     <home-header></home-header>
     <vue-awesome-swiper></vue-awesome-swiper>
     <icons></icons>
+    <recommend></recommend>
   </div>
 </template>
 
 <script>
-  import homeHeader from './components/HomeHeader.vue';
-  import VueAwesomeSwiper from './components/VueAwesomeSwiper.vue';
-  import Icons from './components/Icons.vue';
+  import HomeHeader from './components/HomeHeader.vue';
+  import HomeVueAwesomeSwiper from './components/HomeVueAwesomeSwiper.vue';
+  import HomeIcons from './components/HomeIcons.vue';
+  import HomeRecommend from './components/HomeRecommend.vue';
 
   export default {
     name: 'home',
     components: {
-      homeHeader,
-      VueAwesomeSwiper,
-      Icons
+      HomeHeader,
+      HomeVueAwesomeSwiper,
+      HomeIcons,
+      HomeRecommend
     }
   }
 </script>
