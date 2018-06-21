@@ -14,7 +14,7 @@
   import HomeRecommend from './components/HomeRecommend.vue';
 
   export default {
-    name: 'home',
+    name: 'Home',
     components: {
       HomeHeader,
       HomeVueAwesomeSwiper,
