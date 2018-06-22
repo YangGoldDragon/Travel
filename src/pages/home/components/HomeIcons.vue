@@ -101,9 +101,7 @@
   .mint-swipe
     display block
     width 100%
-    height 3.5rem
-    border-top .2rem solid #eee
-    border-bottom .2rem solid #eee
+    height 3rem
     .swipe-item
       .iconsPerPage
         width 100%
@@ -121,7 +119,7 @@
           font-size .5rem
           .iconName
             display block
-            padding-top .2rem
+            padding-top .15rem
             font-size .2rem
             color #333
             width 95%
