@@ -18,58 +18,12 @@
 
   export default {
     name: 'HomeIcons',
+    props: ['pagesList'],
     data(){
       return {
         auto: false,
         showIndicators: false,
-        iconsNumPerPage: 8,
-        pagesList: [
-          {
-            id: '001',
-            iconUnicode: '&#xe601;',
-            name: '周边游'
-          },
-          {
-            id: '002',
-            iconUnicode: '&#xe62b;',
-            name: '潜水'
-          },
-          {
-            id: '003',
-            iconUnicode: '&#xe60a;',
-            name: '赛事'
-          },
-          {
-            id: '004',
-            iconUnicode: '&#xe6d1;',
-            name: '签证'
-          },
-          {
-            id: '005',
-            iconUnicode: '&#xe679;',
-            name: 'WiFi'
-          },
-          {
-            id: '006',
-            iconUnicode: '&#xe62d;',
-            name: '户外'
-          },
-          {
-            id: '007',
-            iconUnicode: '&#xe66d;',
-            name: '亲子游学'
-          },
-          {
-            id: '008',
-            iconUnicode: '&#xe630;',
-            name: '当地游玩'
-          },
-          {
-            id: '009',
-            iconUnicode: '&#xe600;',
-            name: '自驾游'
-          },
-        ]
+        iconsNumPerPage: 8
       }
     },
     components: {

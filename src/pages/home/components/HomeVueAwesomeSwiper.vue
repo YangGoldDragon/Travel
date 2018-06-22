@@ -14,27 +14,14 @@
 <script>
   export default {
     name: 'HomeVueAwesomeSwiper',
+    props: ['imgList'],
     data() {
       return {
         swiperOption: {
           pagination: '.swiper-pagination',
           loop: true,
           autoplay: 3000
-        },
-        imgList: [
-          {
-            id: '001',
-            imgUrl: '//img1.qunarzz.com/qs/1806/8f/e1141f1b52114402.jpg'
-          },
-          {
-            id: '002',
-            imgUrl: '//img1.qunarzz.com/qs/1805/79/895429b453f08002.jpg'
-          },
-          {
-            id: '003',
-            imgUrl: '//img1.qunarzz.com/qs/1806/98/57120f8844f23e02.jpg'
-          }
-        ]
+        }
       }
     }
   }

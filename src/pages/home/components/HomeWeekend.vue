@@ -2,7 +2,7 @@
   <div class="wrapper">
     <h6 class="recommend">周末去哪儿</h6>
     <ul class="recommend-ul">
-      <li class="recommend-li" v-for="item in recommendList" :key="item.id">
+      <li class="recommend-li" v-for="item in weekendList" :key="item.id">
         <div class="recommend-li-left">
           <img :src="item.imgUrl" alt="">
         </div>
@@ -18,34 +18,10 @@
 <script>
   export default {
     name: 'HomeRecommend',
+    props: ['weekendList'],
     data(){
       return {
-        recommendList: [
-          {
-            id: '001',
-            imgUrl: 'https://imgs.qunarzz.com/p/tts1/1804/eb/186ce471ede7f602.jpg_r_240x160x90_a54d8388.jpg',
-            imgTitle: '金银滩',
-            imgDesc: '网红4+2环湖茶卡high尖叫｜住湖畔候日出｜金银滩+倒淌河+青海湖4日1i'
-          },
-          {
-            id: '002',
-            imgUrl: 'https://imgs.qunarzz.com/p/tts0/1706/e7/bc506546ba470d02.jpg_r_240x160x90_bf5d1e76.jpg',
-            imgTitle: '张家界森林公园',
-            imgDesc: '品质纯玩高铁4日·张家界森林公园-玻璃桥-天门山玻璃栈道-凤凰-宿五星品美食'
-          },
-          {
-            id: '003',
-            imgUrl: 'https://imgs.qunarzz.com/p/tts1/1804/eb/186ce471ede7f602.jpg_r_240x160x90_a54d8388.jpg',
-            imgTitle: '金银滩',
-            imgDesc: '网红4+2环湖茶卡high尖叫｜住湖畔候日出｜金银滩+倒淌河+青海湖4日1i'
-          },
-          {
-            id: '004',
-            imgUrl: 'https://imgs.qunarzz.com/p/tts0/1706/e7/bc506546ba470d02.jpg_r_240x160x90_bf5d1e76.jpg',
-            imgTitle: '张家界森林公园',
-            imgDesc: '品质纯玩高铁4日·张家界森林公园-玻璃桥-天门山玻璃栈道-凤凰-宿五星品美食'
-          }
-        ]
+
       }
     }
   }

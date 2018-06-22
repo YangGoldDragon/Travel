@@ -1,0 +1,119 @@
+{
+  "ret": true,
+  "data": {
+    "city": "广州",
+    "pagesList": [
+      {
+        "id": "001",
+        "iconUnicode": "&#xe601;",
+        "name": "周边游"
+      },
+      {
+        "id": "002",
+        "iconUnicode": "&#xe62b;",
+        "name": "潜水"
+      },
+      {
+        "id": "003",
+        "iconUnicode": "&#xe60a;",
+        "name": "赛事"
+      },
+      {
+        "id": "004",
+        "iconUnicode": "&#xe6d1;",
+        "name": "签证"
+      },
+      {
+        "id": "005",
+        "iconUnicode": "&#xe679;",
+        "name": "WiFi"
+      },
+      {
+        "id": "006",
+        "iconUnicode": "&#xe62d;",
+        "name": "户外"
+      },
+      {
+        "id": "007",
+        "iconUnicode": "&#xe66d;",
+        "name": "亲子游学"
+      },
+      {
+        "id": "008",
+        "iconUnicode": "&#xe630;",
+        "name": "当地游玩"
+      },
+      {
+        "id": "009",
+        "iconUnicode": "&#xe600;",
+        "name": "自驾游"
+      }
+    ],
+    "recommendList": [
+      {
+        "id": "001",
+        "imgUrl": "https://imgs.qunarzz.com/p/tts9/1805/ec/3a6e53b7cabdc802.jpg_180x120_9670af64.jpg",
+        "imgTitle": "骑行十里画廊",
+        "imgDesc": "骑行十里画廊！桂林阳朔+5A漓江+遇龙河+世外桃源+象鼻山+龙脊金坑梯田4日"
+      },
+      {
+        "id": "002",
+        "imgUrl": "https://imgs.qunarzz.com/p/tts8/1804/3b/6094bd35f5ba6902.jpg_180x120_d1347326.jpg",
+        "imgTitle": "桂林上水甲天下",
+        "imgDesc": "桂林山水甲天下-桂林/北海/涠洲岛/北海银滩/火山岛经典刘三姐大观园双飞7天"
+      },
+      {
+        "id": "003",
+        "imgUrl": "https://imgs.qunarzz.com/p/tts9/1805/ec/3a6e53b7cabdc802.jpg_180x120_9670af64.jpg",
+        "imgTitle": "骑行十里画廊",
+        "imgDesc": "骑行十里画廊！桂林阳朔+5A漓江+遇龙河+世外桃源+象鼻山+龙脊金坑梯田4日"
+      },
+      {
+        "id": "004",
+        "imgUrl": "https://imgs.qunarzz.com/p/tts8/1804/3b/6094bd35f5ba6902.jpg_180x120_d1347326.jpg",
+        "imgTitle": "桂林上水甲天下",
+        "imgDesc": "桂林山水甲天下-桂林/北海/涠洲岛/北海银滩/火山岛经典刘三姐大观园双飞7天"
+      }
+    ],
+    "imgList": [
+      {
+        "id": "001",
+        "imgUrl": "//img1.qunarzz.com/qs/1806/8f/e1141f1b52114402.jpg"
+      },
+      {
+        "id": "002",
+        "imgUrl": "//img1.qunarzz.com/qs/1805/79/895429b453f08002.jpg"
+      },
+      {
+        "id": "003",
+        "imgUrl": "//img1.qunarzz.com/qs/1806/98/57120f8844f23e02.jpg"
+      }
+    ],
+    "weekendList": [
+      {
+        "id": "001",
+        "imgUrl": "https://imgs.qunarzz.com/p/tts1/1804/eb/186ce471ede7f602.jpg_r_240x160x90_a54d8388.jpg",
+        "imgTitle": "金银滩",
+        "imgDesc": "网红4+2环湖茶卡high尖叫｜住湖畔候日出｜金银滩+倒淌河+青海湖4日1i"
+      },
+      {
+        "id": "002",
+        "imgUrl": "https://imgs.qunarzz.com/p/tts0/1706/e7/bc506546ba470d02.jpg_r_240x160x90_bf5d1e76.jpg",
+        "imgTitle": "张家界森林公园",
+        "imgDesc": "品质纯玩高铁4日·张家界森林公园-玻璃桥-天门山玻璃栈道-凤凰-宿五星品美食"
+      },
+      {
+        "id": "003",
+        "imgUrl": "https://imgs.qunarzz.com/p/tts1/1804/eb/186ce471ede7f602.jpg_r_240x160x90_a54d8388.jpg",
+        "imgTitle": "金银滩",
+        "imgDesc": "网红4+2环湖茶卡high尖叫｜住湖畔候日出｜金银滩+倒淌河+青海湖4日1i"
+      },
+      {
+        "id": "004",
+        "imgUrl": "https://imgs.qunarzz.com/p/tts0/1706/e7/bc506546ba470d02.jpg_r_240x160x90_bf5d1e76.jpg",
+        "imgTitle": "张家界森林公园",
+        "imgDesc": "品质纯玩高铁4日·张家界森林公园-玻璃桥-天门山玻璃栈道-凤凰-宿五星品美食"
+      }
+    ]
+  }
+}

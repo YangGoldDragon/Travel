@@ -1,10 +1,10 @@
 <template>
   <div>
-    <home-header></home-header>
-    <home-vue-awesome-swiper></home-vue-awesome-swiper>
-    <home-icons></home-icons>
-    <home-recommend></home-recommend>
-    <home-weekend></home-weekend>
+    <home-header :city="city"></home-header>
+    <home-vue-awesome-swiper :imgList="imgList"></home-vue-awesome-swiper>
+    <home-icons :pagesList="pagesList"></home-icons>
+    <home-recommend :recommendList="recommendList"></home-recommend>
+    <home-weekend :weekendList="weekendList"></home-weekend>
   </div>
 </template>
 
@@ -14,14 +14,43 @@
   import HomeIcons from './components/HomeIcons.vue';
   import HomeRecommend from './components/HomeRecommend.vue';
   import HomeWeekend from './components/HomeWeekend.vue';
+  import axios from 'axios';
   export default {
     name: 'Home',
+    data(){
+      return {
+        city: '',
+        pagesList: [],
+        recommendList: [],
+        imgList: [],
+        weekendList: []
+      }
+    },
     components: {
       HomeHeader,
       HomeVueAwesomeSwiper,
       HomeIcons,
       HomeRecommend,
       HomeWeekend
+    },
+    methods: {
+      getHomeInfo(){
+        axios.get('/static/mock/home.json')
+          .then(this.getHomeInfoSucc)
+      },
+      getHomeInfoSucc(res){
+        if(res.data.ret && res.data.data){
+          const data = res.data.data;
+          this.city = data.city;
+          this.pagesList = data.pagesList;
+          this.recommendList = data.recommendList;
+          this.imgList = data.imgList;
+          this.weekendList = data.weekendList;
+        }
+      }
+    },
+    mounted(){
+      this.getHomeInfo();
     }
   }
 </script>

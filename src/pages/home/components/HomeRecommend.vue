@@ -19,34 +19,10 @@
 <script>
   export default {
     name: 'HomeRecommend',
+    props: ['recommendList'],
     data(){
       return {
-        recommendList: [
-          {
-            id: '001',
-            imgUrl: 'https://imgs.qunarzz.com/p/tts9/1805/ec/3a6e53b7cabdc802.jpg_180x120_9670af64.jpg',
-            imgTitle: '骑行十里画廊',
-            imgDesc: '骑行十里画廊！桂林阳朔+5A漓江+遇龙河+世外桃源+象鼻山+龙脊金坑梯田4日'
-          },
-          {
-            id: '002',
-            imgUrl: 'https://imgs.qunarzz.com/p/tts8/1804/3b/6094bd35f5ba6902.jpg_180x120_d1347326.jpg',
-            imgTitle: '桂林上水甲天下',
-            imgDesc: '桂林山水甲天下-桂林/北海/涠洲岛/北海银滩/火山岛经典刘三姐大观园双飞7天'
-          },
-          {
-            id: '003',
-            imgUrl: 'https://imgs.qunarzz.com/p/tts9/1805/ec/3a6e53b7cabdc802.jpg_180x120_9670af64.jpg',
-            imgTitle: '骑行十里画廊',
-            imgDesc: '骑行十里画廊！桂林阳朔+5A漓江+遇龙河+世外桃源+象鼻山+龙脊金坑梯田4日'
-          },
-          {
-            id: '004',
-            imgUrl: 'https://imgs.qunarzz.com/p/tts8/1804/3b/6094bd35f5ba6902.jpg_180x120_d1347326.jpg',
-            imgTitle: '桂林上水甲天下',
-            imgDesc: '桂林山水甲天下-桂林/北海/涠洲岛/北海银滩/火山岛经典刘三姐大观园双飞7天'
-          }
-        ]
+
       }
     }
   }

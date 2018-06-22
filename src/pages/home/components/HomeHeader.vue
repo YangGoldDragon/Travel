@@ -8,7 +8,7 @@
       <span class="iconfont icon-search">&#xe7cd;</span>
     </div>
     <div class="header-right">
-      <span class="city">城市</span>
+      <span class="city">{{city}}</span>
       <span class="iconfont icon-city">&#xe617;</span>
     </div>
   </div>
@@ -16,7 +16,10 @@
 
 <script>
   export default {
-    name: 'HomeHeader'
+    name: 'HomeHeader',
+    props: {
+      city: String
+    }
   }
 </script>
 
