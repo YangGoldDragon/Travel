@@ -7,10 +7,12 @@
       <input type="text" placeholder="输入城市/景点/游玩主题">
       <span class="iconfont icon-search">&#xe7cd;</span>
     </div>
-    <div class="header-right">
-      <span class="city">{{city}}</span>
-      <span class="iconfont icon-city">&#xe617;</span>
-    </div>
+    <router-link to="/city">
+      <div class="header-right">
+        <span class="city">{{city}}</span>
+        <span class="iconfont icon-city">&#xe617;</span>
+      </div>
+    </router-link>
   </div>
 </template>
 
@@ -37,7 +39,7 @@
       justify-content center
       align-items center
       .icon-back
-        font-size .6rem
+        font-size $iconBackFontsize
     .header-middle
       position relative
       flex-grow 1
@@ -67,9 +69,11 @@
       display flex
       justify-content center
       align-items center
+      color white
       .city
         font-size .32rem
       .icon-city
         font-size .36rem
-        padding-left .04rem
+        padding-left .06rem
+        padding-top .08rem
 </style>

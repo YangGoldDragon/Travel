@@ -58,3 +58,8 @@ input {
   border: none;
   outline: none;
 }
+
+a {
+  color: black;
+  text-decoration: none;
+}
