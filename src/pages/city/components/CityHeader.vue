@@ -6,7 +6,7 @@
       </router-link>
       <h6 class="cityChoose">城市选择</h6>
     </div>
-    <input type="text" class="cityEnter">
+    <input type="text" class="cityEnter" placeholder="输入城市名或拼音">
   </div>
 </template>
 
