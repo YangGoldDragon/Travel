@@ -14,31 +14,15 @@
       <div class="hotCity">
         <h6 class="hotCity-title border-topbottom">热门城市</h6>
         <ul class="hotCity-name">
-          <li>北京</li>
-          <li>北京</li>
-          <li>北京</li>
+          <li  v-for="item in hotCities" :key="item.id">{{item.name}}</li>
         </ul>
       </div>
       <div class="perCity">
         <ul>
-          <li>
-            <h6 class="perCity-title border-topbottom">A</h6>
+          <li v-for="(item, key) in cities" :key="key">
+            <h6 class="perCity-title border-topbottom">{{key}}</h6>
             <ul class="perCity-name">
-              <li class="border-bottom">北京</li>
-              <li class="border-bottom">北京</li>
-              <li class="border-bottom">北京</li>
-              <li class="border-bottom">北京</li>
-              <li class="border-bottom">北京</li>
-            </ul>
-          </li>
-          <li>
-            <h6 class="perCity-title border-topbottom">B</h6>
-            <ul class="perCity-name">
-              <li class="border-bottom">北京</li>
-              <li class="border-bottom">北京</li>
-              <li class="border-bottom">北京</li>
-              <li class="border-bottom">北京</li>
-              <li class="border-bottom">北京</li>
+              <li class="border-bottom" v-for="innerItem in item" :key="innerItem.id">{{innerItem.name}}</li>
             </ul>
           </li>
         </ul>
@@ -51,6 +35,7 @@
   import BScroll from 'better-scroll'
   export default {
     name: 'CityList',
+    props: ['cities','hotCities'],
     mounted(){
       this.scroll = new BScroll(this.$refs.wrapper)
     }
