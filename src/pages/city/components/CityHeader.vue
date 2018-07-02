@@ -6,13 +6,23 @@
       </router-link>
       <h6 class="cityChoose">城市选择</h6>
     </div>
-    <input type="text" class="cityEnter" placeholder="输入城市名或拼音">
+    <input type="text" class="cityEnter" placeholder="输入城市名或拼音" v-model="keywords">
   </div>
 </template>
 
 <script>
   export default {
-    name: 'CityHeader'
+    name: 'CityHeader',
+    data(){
+      return{
+        keywords: ''
+      }
+    },
+    watch: {
+      keywords(){
+        this.$emit('change', this.keywords);
+      }
+    }
   }
 </script>
 

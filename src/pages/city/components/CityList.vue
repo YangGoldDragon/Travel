@@ -4,11 +4,7 @@
       <div class="currentCity">
         <h6 class="currentCity-title border-topbottom">当前城市</h6>
         <ul class="currentCity-name">
-          <li>北京</li>
-          <li>北京</li>
-          <li>北京</li>
-          <li>北京</li>
-          <li>北京</li>
+          <li>广州</li>
         </ul>
       </div>
       <div class="hotCity">
