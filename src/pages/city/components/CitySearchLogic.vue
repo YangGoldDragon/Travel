@@ -11,6 +11,8 @@
 
 <script>
   import BScroll from 'better-scroll'
+  import mutations from "../../../store/mutations";
+  import {mapMutations} from 'vuex';
   export default {
     name: 'CitySearchLogic',
     props: ['cities', 'keywords'],
@@ -50,9 +52,12 @@
     },
     methods: {
       handleCityClick(city){
-        this.$store.commit('handleCityClick', city);
+        this.CityClick(city);
         this.$router.push('/')
-      }
+      },
+      ...mapMutations({
+        CityClick: 'handleCityClick'
+      })
     }
   }
 </script>

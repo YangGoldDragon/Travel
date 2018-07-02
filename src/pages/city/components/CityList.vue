@@ -29,6 +29,8 @@
 
 <script>
   import BScroll from 'better-scroll'
+  import {mapMutations} from 'vuex'
+  import mutations from "../../../store/mutations";
   export default {
     name: 'CityList',
     props: ['cities', 'hotCities', 'letter'],
@@ -43,9 +45,12 @@
     },
     methods: {
       handleCityClick(city){
-        this.$store.commit('handleCityClick', city);
+        this.CityClick(city);
         this.$router.push('/')
-      }
+      },
+      ...mapMutations({
+        CityClick: 'handleCityClick'
+      })
     }
   }
 </script>
