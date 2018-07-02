@@ -4,13 +4,13 @@
       <div class="currentCity">
         <h6 class="currentCity-title border-topbottom">当前城市</h6>
         <ul class="currentCity-name">
-          <li>广州</li>
+          <li>{{this.$store.state.city}}</li>
         </ul>
       </div>
       <div class="hotCity">
         <h6 class="hotCity-title border-topbottom">热门城市</h6>
         <ul class="hotCity-name">
-          <li  v-for="item in hotCities" :key="item.id">{{item.name}}</li>
+          <li  v-for="item in hotCities" :key="item.id" @click="handleCityClick(item.name)">{{item.name}}</li>
         </ul>
       </div>
       <div class="perCity">
@@ -18,7 +18,7 @@
           <li v-for="(item, key) in cities" :key="key" :ref="key">
             <h6 class="perCity-title border-topbottom">{{key}}</h6>
             <ul class="perCity-name">
-              <li class="border-bottom" v-for="innerItem in item" :key="innerItem.id">{{innerItem.name}}</li>
+              <li class="border-bottom" v-for="innerItem in item" :key="innerItem.id" @click="handleCityClick(innerItem.name)">{{innerItem.name}}</li>
             </ul>
           </li>
         </ul>
@@ -39,6 +39,12 @@
       letter: function () {
         const ele = this.$refs[this.letter][0];
         this.scroll.scrollToElement(ele);
+      }
+    },
+    methods: {
+      handleCityClick(city){
+        this.$store.commit('handleCityClick', city);
+        this.$router.push('/')
       }
     }
   }

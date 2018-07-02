@@ -2,7 +2,7 @@
   <div class="wrapper" ref="wrapper" v-show="keywords">
     <div>
       <ul class="cityList">
-        <li v-for="(item, index) in list" :key="index" :ref="index" class="city border-bottom">{{item}}</li>
+        <li v-for="(item, index) in list" :key="index" :ref="index" class="city border-bottom" @click="handleCityClick(item)">{{item}}</li>
         <li v-show="noData" class="city border-bottom">无法找到匹配城市</li>
       </ul>
     </div>
@@ -46,6 +46,12 @@
     computed: {
       noData(){
         return !this.list.length;
+      }
+    },
+    methods: {
+      handleCityClick(city){
+        this.$store.commit('handleCityClick', city);
+        this.$router.push('/')
       }
     }
   }

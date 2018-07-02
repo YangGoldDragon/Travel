@@ -7,6 +7,7 @@ import fastClick from 'fastclick';
 import VueAwesomeSwiper from 'vue-awesome-swiper';
 import MintUI from 'mint-ui';
 import axios from 'axios';
+import store from './store/index.js';
 
 import 'mint-ui/lib/style.css';
 import './assets/styles/reset.css';
@@ -24,6 +25,7 @@ Vue.prototype.axios = axios;
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 });
