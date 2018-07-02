@@ -1,8 +1,8 @@
 <template>
   <div>
     <city-header></city-header>
-    <city-list :cities="cities" :hotCities="hotCities"></city-list>
-    <city-alphabet :cities="cities"></city-alphabet>
+    <city-list :cities="cities" :hotCities="hotCities" :letter="letter"></city-list>
+    <city-alphabet :cities="cities" @change="handleChangeLetter"></city-alphabet>
   </div>
 </template>
 
@@ -10,14 +10,14 @@
   import CityHeader from './components/CityHeader.vue';
   import CityList from './components/CityList.vue';
   import CityAlphabet from './components/CityAlphabet.vue';
-  import axios from 'axios';
 
   export default {
     name: 'City',
     data(){
       return {
         cities: {},
-        hotCities: []
+        hotCities: [],
+        letter: ''
       }
     },
     components: {
@@ -27,7 +27,7 @@
     },
     methods: {
       getCityInfo(){
-        axios.get('./../../static/mock/city.json')
+        this.axios.get('./../../static/mock/city.json')
           .then(this.getCityInfoSucc)
       },
       getCityInfoSucc(res){
@@ -36,6 +36,9 @@
           this.cities = data.cities;
           this.hotCities = data.hotCities;
         }
+      },
+      handleChangeLetter(letter){
+        this.letter = letter
       }
     },
     mounted () {

@@ -14,7 +14,6 @@
   import HomeIcons from './components/HomeIcons.vue';
   import HomeRecommend from './components/HomeRecommend.vue';
   import HomeWeekend from './components/HomeWeekend.vue';
-  import axios from 'axios';
   export default {
     name: 'Home',
     data(){
@@ -35,7 +34,7 @@
     },
     methods: {
       getHomeInfo(){
-        axios.get('/static/mock/home.json')
+        this.axios.get('/static/mock/home.json')
           .then(this.getHomeInfoSucc)
       },
       getHomeInfoSucc(res){
