@@ -9,7 +9,7 @@
         <div class="recommend-li-right">
           <h6>{{item.imgTitle}}</h6>
           <p>{{item.imgDesc}}</p>
-          <button>查看详情</button>
+          <router-link :to="'/detail/' + item.id" tag="button">查看详情</router-link>
         </div>
       </li>
     </ul>
