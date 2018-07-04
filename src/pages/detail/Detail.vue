@@ -1,14 +1,77 @@
 <template>
-  <div>
+  <div class="wrapper">
+    <div class="banner" @click="handleBannerClick">
+      <img src="https://youimg1.c-ctrip.com/target/10020q000000gbtn63B1F_R_640_10000_Q90.png" alt="" class="bannerImg">
+      <h6 class="leftArea">大连圣亚海洋世界（AAAA景区）</h6>
+      <div class="rightArea">
+        <span class="iconfont">&#xe63b;</span>
+        <span class="imgNumber">3</span>
+      </div>
+    </div>
+    <gallery v-show="showGallery" @closeGallery="handleCloseGallery" :imgList="imgList"></gallery>
   </div>
 </template>
 
 <script>
+  import Gallery from '../../common/gallery/Gallery.vue';
   export default {
-    name: 'Detail'
+    name: 'Detail',
+    data(){
+      return{
+        showGallery: false,
+        imgList: [
+          'https://dimg04.c-ctrip.com/images/30060j000000avqxv0263_C_500_280_Q90.jpg',
+          'https://dimg04.c-ctrip.com/images/30030j000000ay4gkAA39_C_500_280_Q90.jpg',
+          'https://dimg04.c-ctrip.com/images/300c0j000000axbkw2F3F_C_500_280_Q90.jpg'
+        ]
+      }
+    },
+    components: {
+      Gallery
+    },
+    methods: {
+      handleBannerClick(){
+        this.showGallery = true;
+      },
+      handleCloseGallery(){
+        this.showGallery = false;
+      }
+    }
   }
 </script>
 
 <style lang="stylus" scoped>
+  .wrapper
+    .banner
+      position relative
+      display block
+      overflow hidden
+      width 100%
+      height 0
+      padding-bottom 66.6%
+      .bannerImg
+        display block
+        width 100%
+        background-image linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8));
+      .leftArea
+        position absolute
+        left .2rem
+        bottom .3rem
+        font-size .3rem
+        color white
+        font-weight bold
+      .rightArea
+        position absolute
+        right .2rem
+        bottom .2rem
+        background rgba(0, 0, 0, .8);
+        border-radius .3rem
+        height .32rem
+        line-height .32rem
+        font-size .26rem
+        color white
+        padding .1rem .3rem
+        .imgNumber
+          color white
 </style>
 
