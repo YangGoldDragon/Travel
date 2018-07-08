@@ -9,11 +9,14 @@
       </div>
     </div>
     <gallery v-show="showGallery" @closeGallery="handleCloseGallery" :imgList="imgList"></gallery>
+    <detail-header></detail-header>
+    <div class="content"></div>
   </div>
 </template>
 
 <script>
   import Gallery from '../../common/gallery/Gallery.vue';
+  import DetailHeader from './DetailHeader.vue';
   export default {
     name: 'Detail',
     data(){
@@ -27,7 +30,8 @@
       }
     },
     components: {
-      Gallery
+      Gallery,
+      DetailHeader
     },
     methods: {
       handleBannerClick(){
@@ -42,6 +46,8 @@
 
 <style lang="stylus" scoped>
   .wrapper
+    .content
+      height 1000px
     .banner
       position relative
       display block
