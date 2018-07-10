@@ -10,13 +10,16 @@
     </div>
     <gallery v-show="showGallery" @closeGallery="handleCloseGallery" :imgList="imgList"></gallery>
     <detail-header></detail-header>
-    <div class="content"></div>
+    <div class="content">
+      <detail-list :list="list"></detail-list>
+    </div>
   </div>
 </template>
 
 <script>
   import Gallery from '../../common/gallery/Gallery.vue';
-  import DetailHeader from './DetailHeader.vue';
+  import DetailHeader from './components/DetailHeader.vue';
+  import DetailList from './components/DetailList.vue';
   export default {
     name: 'Detail',
     data(){
@@ -26,12 +29,85 @@
           'https://dimg04.c-ctrip.com/images/30060j000000avqxv0263_C_500_280_Q90.jpg',
           'https://dimg04.c-ctrip.com/images/30030j000000ay4gkAA39_C_500_280_Q90.jpg',
           'https://dimg04.c-ctrip.com/images/300c0j000000axbkw2F3F_C_500_280_Q90.jpg'
-        ]
+        ],
+        list: {
+          item: [
+            {
+              title: '成人票',
+              children: {
+                item: [
+                  {
+                    title: '成人三馆联票',
+                    children: {
+                      item: [
+                        {
+                          title: '成人三馆联票--XX连锁店'
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              title: '儿童票',
+              children: {
+                item: [
+                  {
+                    title: '儿童三馆联票',
+                    children: {
+                      item: [
+                        {
+                          title: '儿童三馆联票--XX连锁店'
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              title: '特惠票',
+              children: {
+                item: [
+                  {
+                    title: '特惠三馆联票',
+                    children: {
+                      item: [
+                        {
+                          title: '特惠三馆联票--XX连锁店'
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              title: '特惠票',
+              children: {
+                item: [
+                  {
+                    title: '特惠三馆联票',
+                    children: {
+                      item: [
+                        {
+                          title: '特惠三馆联票--XX连锁店'
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+          ]
+        }
       }
     },
     components: {
       Gallery,
-      DetailHeader
+      DetailHeader,
+      DetailList
     },
     methods: {
       handleBannerClick(){

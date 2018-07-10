@@ -19,7 +19,6 @@
     methods: {
       handleShowHeader(){
         const top = document.documentElement.scrollTop;
-        console.log(top)
         if(top > 60){
           this.showHeader = true;
           const opacity = top / 200;
@@ -41,7 +40,7 @@
 </script>
 
 <style lang="stylus" scoped>
-  @import "../../assets/styles/variable.styl";
+  @import "../../../assets/styles/variable.styl";
   .wrapper
     position fixed
     top 0
@@ -57,7 +56,7 @@
       margin auto
       font-size .5rem
       border-radius 50%
-      background rgba(0, 0, 0, .8)
+      background rgba(0, 0, 0, .6)
       width .8rem
       height .8rem
       display flex
