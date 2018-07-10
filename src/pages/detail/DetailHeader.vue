@@ -19,6 +19,7 @@
     methods: {
       handleShowHeader(){
         const top = document.documentElement.scrollTop;
+        console.log(top)
         if(top > 60){
           this.showHeader = true;
           const opacity = top / 200;
@@ -32,6 +33,9 @@
     },
     activated(){
       window.addEventListener('scroll', this.handleShowHeader);
+    },
+    deactivated(){
+      window.removeEventListener('scroll', this.handleShowHeader);
     }
   }
 </script>
