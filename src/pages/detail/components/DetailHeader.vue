@@ -47,6 +47,7 @@
     left 0
     width 100%
     height 1.2rem
+    z-index 99
     .back
       position absolute
       top 0
