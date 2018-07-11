@@ -21,7 +21,7 @@
         const top = document.documentElement.scrollTop;
         if(top > 60){
           this.showHeader = true;
-          const opacity = top / 200;
+          let opacity = top / 200;
           this.opacityStyle = {
             opacity
           }
@@ -30,11 +30,12 @@
         }
       }
     },
-    activated(){
+    mounted(){
       window.addEventListener('scroll', this.handleShowHeader);
     },
-    deactivated(){
+    destroyed(){
       window.removeEventListener('scroll', this.handleShowHeader);
+
     }
   }
 </script>
@@ -47,7 +48,7 @@
     left 0
     width 100%
     height 1.2rem
-    z-index 99
+    z-index 3
     .back
       position absolute
       top 0

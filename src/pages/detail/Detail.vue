@@ -8,7 +8,9 @@
         <span class="imgNumber">3</span>
       </div>
     </div>
-    <gallery v-show="showGallery" @closeGallery="handleCloseGallery" :imgList="imgList"></gallery>
+    <animation-fade>
+      <gallery v-show="showGallery" @closeGallery="handleCloseGallery" :imgList="imgList"></gallery>
+    </animation-fade>
     <detail-header></detail-header>
     <div class="content">
       <detail-list :list="list"></detail-list>
@@ -20,6 +22,7 @@
   import Gallery from '../../common/gallery/Gallery.vue';
   import DetailHeader from './components/DetailHeader.vue';
   import DetailList from './components/DetailList.vue';
+  import AnimationFade from './../../common/animation/Fade.vue';
   export default {
     name: 'Detail',
     data(){
@@ -36,7 +39,8 @@
     components: {
       Gallery,
       DetailHeader,
-      DetailList
+      DetailList,
+      AnimationFade
     },
     methods: {
       handleBannerClick(){
