@@ -1,0 +1,77 @@
+{
+  "ret": true,
+  "data": {
+    "list": {
+      "item": [
+        {
+          "title": "成人票",
+          "children": {
+            "item": [
+              {
+                "title": "成人三馆联票",
+                "children": {
+                  "item": [
+                    {
+                      "title": "成人三馆联票--XX连锁店"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "title": "儿童票",
+          "children": {
+            "item": [
+              {
+                "title": "儿童三馆联票",
+                "children": {
+                  "item": [
+                    {
+                      "title": "儿童三馆联票--XX连锁店"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "title": "学生票",
+          "children": {
+            "item": [
+              {
+                "title": "学生三馆联票",
+                "children": {
+                  "item": [
+                    {
+                      "title": "学生三馆联票--XX连锁店"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "title": "特惠票",
+          "children": {
+            "item": [
+              {
+                "title": "特惠三馆联票",
+                "children": {
+                  "item": [
+                    {
+                      "title": "特惠三馆联票--XX连锁店"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

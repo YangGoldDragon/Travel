@@ -30,78 +30,7 @@
           'https://dimg04.c-ctrip.com/images/30030j000000ay4gkAA39_C_500_280_Q90.jpg',
           'https://dimg04.c-ctrip.com/images/300c0j000000axbkw2F3F_C_500_280_Q90.jpg'
         ],
-        list: {
-          item: [
-            {
-              title: '成人票',
-              children: {
-                item: [
-                  {
-                    title: '成人三馆联票',
-                    children: {
-                      item: [
-                        {
-                          title: '成人三馆联票--XX连锁店'
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              title: '儿童票',
-              children: {
-                item: [
-                  {
-                    title: '儿童三馆联票',
-                    children: {
-                      item: [
-                        {
-                          title: '儿童三馆联票--XX连锁店'
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              title: '特惠票',
-              children: {
-                item: [
-                  {
-                    title: '特惠三馆联票',
-                    children: {
-                      item: [
-                        {
-                          title: '特惠三馆联票--XX连锁店'
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              title: '特惠票',
-              children: {
-                item: [
-                  {
-                    title: '特惠三馆联票',
-                    children: {
-                      item: [
-                        {
-                          title: '特惠三馆联票--XX连锁店'
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-          ]
-        }
+        list: null
       }
     },
     components: {
@@ -115,7 +44,24 @@
       },
       handleCloseGallery(){
         this.showGallery = false;
+      },
+      getDetailInfo(){
+        this.axios.get('./../../static/mock/detail.json', {
+          params: {
+            id: this.$route.params.id
+          }
+        })
+          .then(this.getDetailInfoSucc)
+      },
+      getDetailInfoSucc(res){
+        res = res.data;
+        if(res.ret && res.data){
+          this.list = res.data.list;
+        }
       }
+    },
+    mounted(){
+      this.getDetailInfo();
     }
   }
 </script>
