@@ -64,7 +64,7 @@
             padding .05rem 0
             ellipsis()
           p
-            font-size .14rem
+            font-size .24rem
             text-indent .2rem
             ellipsis()
             margin-top .1rem

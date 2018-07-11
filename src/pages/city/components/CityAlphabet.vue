@@ -81,7 +81,7 @@
       align-items center
       li
         width .4rem
-        line-height .4rem
+        line-height .3rem
         color $bgColor
         text-align center
         font-size .26rem

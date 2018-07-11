@@ -74,7 +74,7 @@
           .iconName
             display block
             padding-top .15rem
-            font-size .2rem
+            font-size .26rem
             color #333
             width 95%
             text-align center

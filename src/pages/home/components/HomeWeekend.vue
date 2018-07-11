@@ -67,7 +67,7 @@
             ellipsis()
             margin-top .1rem
           p
-            font-size .14rem
+            font-size .24rem
             text-indent .2rem
             ellipsis()
             margin-top .1rem
