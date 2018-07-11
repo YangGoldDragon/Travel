@@ -4,6 +4,7 @@
   "description": "A Vue.js project",
   "author": "yangjinlong <835383258@qq.com>",
   "private": true,
+  "homepage": "https://yanggolddragon.github.io/Travel/",
   "scripts": {
     "dev": "webpack-dev-server --host 0.0.0.0 --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
