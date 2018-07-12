@@ -30,7 +30,7 @@
     },
     methods: {
       getCityInfo(){
-        this.axios.get('./../../static/mock/city.json')
+        this.axios.get('../../../static/mock/city.json')
           .then(this.getCityInfoSucc)
       },
       getCityInfoSucc(res){

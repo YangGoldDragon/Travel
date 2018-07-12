@@ -50,7 +50,7 @@
         this.showGallery = false;
       },
       getDetailInfo(){
-        this.axios.get('./../../static/mock/detail.json', {
+        this.axios.get('../../../static/mock/detail.json', {
           params: {
             id: this.$route.params.id
           }
