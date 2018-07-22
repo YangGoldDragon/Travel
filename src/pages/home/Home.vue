@@ -35,7 +35,7 @@
     },
     methods: {
       getHomeInfo(){
-        this.axios.get('../../../static/mock/home.json?city=' + this.city)
+        this.axios.get('../../../static/mock/home.json?city= /api/home.json?city=' + this.city)
           .then(this.getHomeInfoSucc)
       },
       getHomeInfoSucc(res){
